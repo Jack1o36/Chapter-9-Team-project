@@ -18,11 +18,9 @@ graph TD;
 
 #### Function Diagrams
 
-| `Main()`    |               |  author     |
-| ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
-| `time:integer`     | calculates ______  | outputs ____             |
-| `name:string`      | takes input for name ___ | returns total |
+| `Main()`    |    author Braxton           |
+| ------------------ | ------------- |
+| `The main driving force that puts it togethor`    | It's like the brain of the operation  |
 ***
 | `get_shift()`    |               |     author   |
 | ------------------ | ------------- | ------------ |
@@ -42,11 +40,9 @@ graph TD;
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
-| `create_key(shift)`    |               |     author   |
+| `create_key(shift)`    |               |     author Braxton  |
 | ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
-| `time:integer`     | calculates ______  | outputs ____             |
-| `name:string`      | takes input for name ___ | returns total |
+| `Accepts shift value`    | changes the accepted shift into a key list | returns key values             |
 ***
 | `encode(message, key)`    |               |     author   |
 | ------------------ | ------------- | ------------ |
@@ -54,9 +50,7 @@ graph TD;
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
-| `decode(message, key)`    |               |     author   |
+| `decode(message, key)`    |               |     author  Braxton |
 | ------------------ | ------------- | ------------ |
-| `argument:type`    | takes input from the user for ____  |              |
-| `time:integer`     | calculates ______  | outputs ____             |
-| `name:string`      | takes input for name ___ | returns total |
+| `Accepts message and key values`    | takes the encrypted message and decodes it  | prints decoded message             |
 ***
