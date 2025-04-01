@@ -3,18 +3,29 @@ def main():
     pass
     
 def get_shift(): #jamie
+    #get_shift will prompt the user for the shift value and return the value as a string
+    #it will use variable 'shift_value' as the value
     pass
     
 def choose_option(): #jamie
+    #choose_option will prompt the user to choose to encode or decode
+    #it will return true if the user chooses encode and false if the user chooses decode
+    #validate to only accept the appropriate prompts for encode or decode
     pass
     
-def get_message(): #jamie 
+def get_message(): #jamie
+    #get_message should prompt the user to enter a message that will be encoded or decoded
+    #it should return that message
+    #it will be variable 'user_message'
     pass
     
 def create_key(shift):
     pass
     
 def encode(message, key): #jamie
+    #encode will accept message as a string and key as a dictionary
+    #it will encode the message using the key and return the encoded message as string
+    #the encoded message will be variable 'encoded_message'
     pass
     
 def decode(message, key):
