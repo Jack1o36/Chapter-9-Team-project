@@ -4,7 +4,7 @@ def main():
     
 def get_shift(): #jamie
     #get_shift will prompt the user for the shift value and return the value as a string
-    #it will use variable 'shift_value' as the value
+    #it will use variable 'key' as the value
     pass
     
 def choose_option(): #jamie
@@ -16,7 +16,7 @@ def choose_option(): #jamie
 def get_message(): #jamie
     #get_message should prompt the user to enter a message that will be encoded or decoded
     #it should return that message
-    #it will be variable 'user_message'
+    #it will be variable 'message'
     pass
     
 def create_key(shift):
