@@ -22,19 +22,19 @@ graph TD;
 | ------------------ | ------------- |
 | `The main driving force that puts it togethor`    | It's like the brain of the operation  |
 ***
-| `get_shift()`    |               |     author   |
+| `get_shift()`    |               |     author jamie  |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
-| `choose_option()`    |               |     author   |
+| `choose_option()`    |               |     author jamie   |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
-| `get_message()`    |               |     author   |
+| `get_message()`    |               |     author jamie   |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
@@ -44,7 +44,7 @@ graph TD;
 | ------------------ | ------------- | ------------ |
 | `Accepts shift value`    | changes the accepted shift into a key list | returns key values             |
 ***
-| `encode(message, key)`    |               |     author   |
+| `encode(message, key)`    |               |     author jamie   |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
