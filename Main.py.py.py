@@ -4,7 +4,7 @@ def main():
     
 def get_shift(): #jamie
     #get_shift will prompt the user for the shift value and return the value as a string
-    #it will use variable 'key' as the value
+    #it will use variable 'shift_value' as the value
     pass
     
 def choose_option(): #jamie
