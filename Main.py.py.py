@@ -2,8 +2,14 @@ alphabet = {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7, 'i':8, 'j':9
 shift = 1
 
 def main():
-    pass
-    
+    shift = get_shift()
+    message = get_message()
+    key = create_key(shift)
+    value = choose_option()
+    if value == True:
+        encode(message, key)
+    else:
+        decode(message, key)
 def get_shift(): #jamie
     #get_shift will prompt the user for the shift value and return the value as a string
     #it will use variable 'shift_value' as the value
