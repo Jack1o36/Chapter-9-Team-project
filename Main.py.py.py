@@ -59,6 +59,8 @@ def create_key(shift):
         num += 1
     return key
 
+
+
 def encode(message, key): #jamie
     #encode will accept message as a string and key as a dictionary
     #it will encode the message using the key and return the encoded message as string
@@ -79,4 +81,6 @@ def decode(message, key):
 
     print(new_key)
     for letter in message:
-        new_message += alphabet[item]
+
+    
+ 
