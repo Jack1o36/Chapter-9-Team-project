@@ -29,13 +29,15 @@ def decode(message, key):
     new_key = {}
     print(message)
     diff = 0
-    counter = 0
     for item in alphabet:
         if key[item] != alphabet[item]:
             diff = key[item] - alphabet[item]
         new_key[alphabet[item]] = item
-
+    print(diff)
     print(new_key)
-    for letter in message:
-        new_message += alphabet[item]
-    
+    for letter in message.lower():
+        if letter.isalpha() == True:
+            new_message += new_key[int((alphabet[letter])-diff)%26]
+        else:
+            new_message += letter
+    print(new_message)
