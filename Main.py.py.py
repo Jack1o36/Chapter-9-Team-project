@@ -31,7 +31,7 @@ def choose_option(): #jamie
      
     #check that option is a number
     while option.isdigit() == False:
-        option = input("Please only select \'1\' to encode or \'2\' to decode (is digit): ")
+        option = input("Please only select \'1\' to encode or \'2\' to decode: ")
     
     #check that option is only 1 or 2
     while int(option) < 1 or int(option) > 2:              
