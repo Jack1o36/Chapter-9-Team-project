@@ -19,6 +19,8 @@ def get_shift(): #jamie
     while 1 > int(shift_value) or 25 < int(shift_value):
         shift_value = input("Enter a number 1 - 25 for your encoding shift value: ")
     
+    shift_value = str(shift_value)
+    
     return shift_value
      
 def choose_option(): #jamie
@@ -49,7 +51,11 @@ def get_message(): #jamie
     #get_message should prompt the user to enter a message that will be encoded or decoded
     #it should return that message
     #it will be variable 'message'
-    pass
+    
+    #get user input
+    message = input("Enter a message to encode or decode: ")
+    
+    return message
     
 def create_key(shift):
     num = 0
@@ -65,7 +71,20 @@ def encode(message, key): #jamie
     #encode will accept message as a string and key as a dictionary
     #it will encode the message using the key and return the encoded message as string
     #the encoded message will be variable 'encoded_message'
-    pass
+    alphabet = {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7, 'i':8, 'j':9, 'k':10, 'l':11, 'm':12, 'n':13, 'o':14, 'p':15, 'q':16, 'r':17, 's':18, 't':19, 'u':20, 'v':21, 'w':22, 'y':23, 'x':24, 'z':25}
+    new_message = ''
+    new_key = {}
+    diff = 0
+    for item in alphabet:
+        if key[item] != alphabet[item]:
+            diff = key[item] - alphabet[item]
+        new_key[alphabet[item]] = item
+    for letter in message.lower():
+        if letter.isalpha() == True:
+            new_message += new_key[int((alphabet[letter])+diff)%26]
+        else:
+            new_message += letter
+    print(new_message)
     
 def decode(message, key):
     alphabet = {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7, 'i':8, 'j':9, 'k':10, 'l':11, 'm':12, 'n':13, 'o':14, 'p':15, 'q':16, 'r':17, 's':18, 't':19, 'u':20, 'v':21, 'w':22, 'y':23, 'x':24, 'z':25}
