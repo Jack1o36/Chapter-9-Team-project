@@ -2,14 +2,20 @@ alphabet = {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7, 'i':8, 'j':9
 shift = 1
 
 def main():
-    shift = get_shift()
-    message = get_message()
-    key = create_key(shift)
-    value = choose_option()
-    if value == True:
-        encode(message, key)
-    else:
-        decode(message, key)
+    yes = 'y'
+    while yes.lower() == 'y':
+        try:
+            shift = get_shift()
+            message = get_message()
+            key = create_key(shift)
+            value = choose_option()
+            if value == True:
+                encode(message, key)
+            else:
+                decode(message, key)
+            yes = input("Would you like to continue? (y/n) ")
+        except:
+            pass
 def get_shift(): #jamie
     #get_shift will prompt the user for the shift value and return the value as a string
     #it will use variable 'shift_value' as the value
@@ -67,7 +73,7 @@ def create_key(shift):
     num = 0
     key = {}
     for item in alphabet:
-        key[item] = num + shift
+        key[item] = num + int(shift)
         num += 1
     return key
 
@@ -109,3 +115,4 @@ def decode(message, key):
             new_message += letter
     print(new_message)
 
+main()
